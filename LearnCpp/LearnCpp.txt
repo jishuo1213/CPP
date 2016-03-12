@@ -1,1 +1,1 @@
-./Debug/main.cpp.o
+./Debug/main.cpp.o ./Debug/Person.cpp.o ./Debug/io.cpp.o ./Debug/seq_container.cpp.o

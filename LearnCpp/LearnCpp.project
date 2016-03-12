@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="LearnCpp" InternalType="Console">
   <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
     <Plugin Name="CMakePlugin">
       <![CDATA[[{
   "name": "Debug",
@@ -13,14 +16,23 @@
   "parentProject": ""
  }]]]>
     </Plugin>
-    <Plugin Name="qmake">
-      <![CDATA[00010001N0005Debug000000000000]]>
-    </Plugin>
   </Plugins>
+  <Reconciliation>
+    <Regexes/>
+    <Excludepaths/>
+    <Ignorefiles/>
+    <Extensions>
+      <![CDATA[cpp;c;h;hpp;xrc;wxcp;fbp;text]]>
+    </Extensions>
+    <Topleveldir>../LearnCpp</Topleveldir>
+  </Reconciliation>
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
     <File Name="main.cpp"/>
+    <File Name="Person.cpp"/>
+    <File Name="io.cpp"/>
+    <File Name="seq_container.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
@@ -110,4 +122,16 @@
       </Completion>
     </Configuration>
   </Settings>
+  <VirtualDirectory Name="headers">
+    <File Name="A_class.h"/>
+    <File Name="io.h"/>
+    <File Name="Person.h"/>
+    <File Name="Screen.h"/>
+    <File Name="seq_container.h"/>
+    <File Name="WIndow_mgr.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="tothers">
+    <File Name="input.text"/>
+    <File Name="note.text"/>
+  </VirtualDirectory>
 </CodeLite_Project>
