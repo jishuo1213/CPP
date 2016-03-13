@@ -3,6 +3,8 @@
 #include <vector>
 #include <list>
 #include <array>
+#include <forward_list>
+#include <string>
 //#include "Screen.h"
 //#include "A_class.h"
 
@@ -17,27 +19,54 @@ using ivecItertor = vector<int>::iterator;
 
 int main()
 {
-    list<int> ilist;
-    vector<int> ivec;
-    for(int i = 0; i < 20; ++i) {
-        ilist.push_back(i);
-        ivec.push_back(i);
+
+    forward_list<string> ilist;
+
+    for(int i = 1; i < 20; ++i) {
+        ilist.emplace_front(i, 'a');
     }
 
-    ivecItertor first = ivec.begin();
-    ivecItertor middle = ivec.end();
-    middle = middle - 9;
+    string s1 = "bb";
+    string s2 = "cc";
 
-    cout << *first << endl;
-    ivec.insert(first, 12);
-    
-    cout << *first << "=====" << endl;
+    findAndInsert(ilist, s1, s2);
 
-    ivecItertor iend = ivec.end();
-    while(first != iend) {
+    for(string s : ilist)
+        cout << s << endl;
+
+    /* vector<int> ivec;
+     for(int i = 0; i < 20; ++i) {
+         ilist.push_front(i);
+         ivec.push_back(i);
+     }
+
+     deleteOddNum(ilist);
+
+     for(int i : ilist)
+         cout << i << endl;*/
+
+    //    int temp = 90;
+    //    ilist.push_back(temp);
+    //    temp = 434;
+    //    int &last = ilist.back();
+    //    cout << last<<endl;
+
+    /*
+        ivecItertor first = ivec.begin();
+        ivecItertor middle = ivec.end();
+        middle = middle - 9;
+
         cout << *first << endl;
-        ++first;
-    }
+        ivec.insert(first, 12);
+
+        cout << *first << "=====" << endl;
+
+
+        ivecItertor iend = ivec.end();
+        while(first != iend) {
+            cout << *first << endl;
+            ++first;
+        }*/
 
     //    bool res = compareListAndVector(ilist, ivec);
     //    cout << res << endl;

@@ -5,6 +5,7 @@
 #include <iterator>
 #include <string.h>
 #include <list>
+#include <forward_list>
 
 using namespace std;
 
@@ -12,5 +13,7 @@ extern int findNum(vector<int>::iterator first, vector<int>::iterator second, in
 extern vector<int>::iterator findNumIterator(vector<int>::iterator first, vector<int>::iterator second, int num);
 extern void listToVector(list<char*>& cStringList, vector<string>& strVec);
 extern bool compareListAndVector(list<int>& ilist, vector<int>& ivec);
+extern void deleteOddNum(forward_list<int> & flist);
+extern void findAndInsert(forward_list<string> &fstringlist,string &first,string &second);
 
 #endif // SEQ_CONTAINER_H_INCLUDED

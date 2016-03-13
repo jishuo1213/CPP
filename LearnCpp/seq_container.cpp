@@ -59,3 +59,37 @@ bool compareListAndVector(list<int>& ilist, vector<int>& ivec)
     }
     return true;
 }
+
+void deleteOddNum(forward_list<int>& flist)
+{
+    using flist_iterator = forward_list<int>::iterator;
+    flist_iterator prev = flist.before_begin();
+    flist_iterator curr = flist.begin();
+    while(curr != flist.end()) {
+        if(*curr % 2) {
+            curr = flist.erase_after(prev);
+        } else {
+            prev = curr;
+            ++curr;
+        }
+    }
+}
+
+void findAndInsert(forward_list<string>& fstringlist, string& first, string& second)
+{
+    auto curr = fstringlist.begin();
+    auto last = fstringlist.end();
+    auto prev = fstringlist.before_begin();
+    bool hasFind = false;
+    while(curr != last) {
+        if(*curr == first) {
+           curr = fstringlist.insert_after(curr, second);
+           hasFind = true;
+        } else {
+            ++curr;
+            prev++;
+        }
+    }
+    if(!hasFind)
+        fstringlist.insert_after(prev,second);
+}
