@@ -33,6 +33,7 @@
     <File Name="Person.cpp"/>
     <File Name="io.cpp"/>
     <File Name="seq_container.cpp"/>
+    <File Name="gen_algorithm.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
@@ -129,9 +130,14 @@
     <File Name="Screen.h"/>
     <File Name="seq_container.h"/>
     <File Name="WIndow_mgr.h"/>
+    <File Name="date.h"/>
+    <File Name="gen_algorithm.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="tothers">
-    <File Name="input.text"/>
     <File Name="note.text"/>
+    <File Name="input"/>
+    <File Name="nums"/>
+    <File Name="odd"/>
+    <File Name="enev"/>
   </VirtualDirectory>
 </CodeLite_Project>
