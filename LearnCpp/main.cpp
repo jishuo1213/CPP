@@ -7,21 +7,35 @@
 #include <algorithm>
 #include <functional>
 #include <map>
+#include <memory>
 
 #include "seq_container.h"
 #include "gen_algorithm.h"
 #include "io.h"
+#include "dynamic_memory.h"
 
 using namespace std;
 
 int main()
 {
-    map<string, size_t> word_count; // empty map from string to size_t
-    string word;
-    while(cin >> word)
-        ++word_count[word];         // fetch and increment the counter for word
-    for(const auto& w : word_count) // for each element in the map
-        cout << w.first << " occurs " << w.second << ((w.second > 1) ? " times" : " time") << endl;
+    
+    auto p = new int();
+    auto sp = make_shared<int>();
+    
+    process(shared_ptr<int>(p));
+/*
+    shared_ptr<int> p(new int(42));
+    
+    process(shared_ptr<int>(p));
+
+    cout << *p << endl;*/
+
+    /*    map<string, size_t> word_count; // empty map from string to size_t
+        string word;
+        while(cin >> word)
+            ++word_count[word];         // fetch and increment the counter for word
+        for(const auto& w : word_count) // for each element in the map
+            cout << w.first << " occurs " << w.second << ((w.second > 1) ? " times" : " time") << endl;*/
     // PartitionOddAndEnevNum("../nums", "../odd", "../enev");
 
     //    ReadAndSortNum();

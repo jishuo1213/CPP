@@ -3,6 +3,7 @@
 #include <iterator>
 #include <list>
 #include <string>
+#include <stdexcept>
 
 using namespace std;
 

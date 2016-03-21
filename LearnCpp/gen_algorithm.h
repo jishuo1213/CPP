@@ -1,3 +1,6 @@
+#ifndef GEN_ALGORITHM_H
+#define GEN_ALGORITHM_H
+
 #include <string>
 #include <vector>
 
@@ -9,3 +12,5 @@ extern bool CheckSize(const string& str, int num);
 extern void ReadTextFile(const string& file_name, vector<string>& words_vector);
 extern void ReadAndSortNum();
 extern void PartitionOddAndEnevNum(const string& input_file, const string& odd_num_file, const string& enev_num_file);
+
+#endif

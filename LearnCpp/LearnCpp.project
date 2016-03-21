@@ -34,6 +34,7 @@
     <File Name="io.cpp"/>
     <File Name="seq_container.cpp"/>
     <File Name="gen_algorithm.cpp"/>
+    <File Name="dynamic_memory.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
@@ -132,6 +133,7 @@
     <File Name="WIndow_mgr.h"/>
     <File Name="date.h"/>
     <File Name="gen_algorithm.h"/>
+    <File Name="dynamic_memory.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="tothers">
     <File Name="note.text"/>
