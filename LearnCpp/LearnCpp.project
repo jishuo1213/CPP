@@ -35,6 +35,8 @@
     <File Name="seq_container.cpp"/>
     <File Name="gen_algorithm.cpp"/>
     <File Name="dynamic_memory.cpp"/>
+    <File Name="TextQuery.cpp"/>
+    <File Name="QueryResult.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
@@ -134,6 +136,8 @@
     <File Name="date.h"/>
     <File Name="gen_algorithm.h"/>
     <File Name="dynamic_memory.h"/>
+    <File Name="TextQuery.h"/>
+    <File Name="QueryResult.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="tothers">
     <File Name="note.text"/>

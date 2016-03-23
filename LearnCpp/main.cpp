@@ -16,19 +16,29 @@
 
 using namespace std;
 
+typedef unique_ptr<int> IntP;
+
 int main()
 {
     
-    auto p = new int();
-    auto sp = make_shared<int>();
     
-    process(shared_ptr<int>(p));
-/*
-    shared_ptr<int> p(new int(42));
-    
-    process(shared_ptr<int>(p));
 
-    cout << *p << endl;*/
+    allocator<string> alloc;
+    auto const p = alloc.allocate(10);
+
+    auto q = p;
+    string s;
+    
+    /*    auto p = new int();
+        auto sp = make_shared<int>();
+
+        process(shared_ptr<int>(p));*/
+    /*
+        shared_ptr<int> p(new int(42));
+
+        process(shared_ptr<int>(p));
+
+        cout << *p << endl;*/
 
     /*    map<string, size_t> word_count; // empty map from string to size_t
         string word;

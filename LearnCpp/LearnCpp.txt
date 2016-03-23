@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/Person.cpp.o ./Debug/io.cpp.o ./Debug/seq_container.cpp.o ./Debug/gen_algorithm.cpp.o
+./Debug/main.cpp.o ./Debug/Person.cpp.o ./Debug/io.cpp.o ./Debug/seq_container.cpp.o ./Debug/gen_algorithm.cpp.o ./Debug/dynamic_memory.cpp.o
